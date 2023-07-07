@@ -1,0 +1,199 @@
+
+.minus, .plus {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #f0f0f0;
+    color: #212121;
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px #21212141;
+    zoom: 1.1;
+}
+.num {
+    padding: 0px 10px;
+    color: #212121;
+    border-top: solid 1px #21212141;
+    border-bottom: solid 1px #21212141;
+    background-color: #f0f0f0;
+    zoom: 1.1;
+}
+.orderBtn2 {
+    font-size: .7rem;
+    padding: 0.4rem 1rem;
+    font-family: var(--poppins);
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #7F1D1D;
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  
+  .orderBtn2:active {
+    scale: 0.92;
+  }
+  
+  .orderBtn2:hover {
+    background: #B64248;
+    background: -webkit-gradient(linear, right top, left top, from(#7F1D1D), color-stop(60%, #B64248));
+    background: linear-gradient(270deg, #7F1D1D 0%, #B64248 60%);
+    color: #f0f0f0;
+  }
+.dividerParent
+{
+    position: relative;
+    top: -30px;
+    z-index: 9;
+}
+.textarea {
+    resize: none;
+}
+.divider
+{
+    height: 70px;
+}
+.webPriceImg
+{
+    display: block;
+}
+.mobilePriceImg
+{
+    display: none;
+}
+.inputMobile {
+    width: 90%;
+    background-color: #fff;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    margin: 10px;
+    float: right;
+  }
+  
+.inputMobile:focus {
+border-bottom: 2px solid #A62037;
+border-radius: 4px 4px 2px 2px;
+}
+
+.inputMobile:hover {
+outline: 1px solid lightgrey;
+}
+.orderFormMobile
+{
+    position: absolute !important;
+    width: 95%;
+    height: 680px;
+    background-image: url('/img/order3.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    top: 10%;
+    left: 2.5%;
+    z-index:5;
+}
+.orderForm{
+    position: absolute !important;
+    width: 45%;
+    background-image: url('/img/order2.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    bottom: 10%;
+    left: 25%;
+    z-index:5;
+    padding: 20px 0px;
+  }
+@media screen and (max-width: 1439px) {
+    .divider
+    {
+        height: 50px !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .dividerParent
+    {
+        top: -25px;
+    }
+    .divider
+    {
+        height: 50px;
+    }
+    .orderForm{
+        width: 65%;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .dividerParent
+    {
+        top: -20px;
+    }
+    .divider
+    {
+        height: 40px;
+    }
+    .orderForm{
+        width: 75%;
+        left: 7%;
+    }
+}
+@media screen and (max-width: 840px) {
+    .orderForm{
+        zoom: 0.8;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 767px) {
+    .dividerParent
+    {
+        top: -10px;
+    }
+    .divider
+    {
+        height: 20px;
+    }    
+    .orderForm{
+        zoom: 0.6;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dividerParent
+    {
+        display: none;
+    }
+    .webPriceImg
+    {
+        display: none;
+    }
+    .mobilePriceImg
+    {
+        display: block;
+    }
+    .prices
+    {
+        margin-top: 35%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .orderFormMobile
+    {
+        height: 650px !important;
+    }
+}
+@media screen and (max-width: 375px) {
+    .orderFormMobile
+    {
+        zoom: 0.9;
+        height: 550px !important;
+    }
+}

@@ -1,0 +1,381 @@
+.main
+{
+    overflow: hidden;
+}
+.ingrMD
+{
+    display: block;
+}
+.ingrSM
+{
+    display: none;
+}
+.bg
+{
+    position: relative;
+}
+.bg img
+{
+    position: absolute;
+    z-index: -1 !important;
+    left: 600px;
+    top: 200px;
+}
+.mainTitle
+{
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    color: #7F1D1D;
+    font-size: 25px;
+}
+.dividerParent
+{
+    position: relative;
+    top: -30px;
+    z-index: 9;
+}
+.divider
+{
+    height: 70px;
+}
+.spacing
+{
+    text-align: center;
+    max-width: 70%;
+}
+.secondTitle
+{
+    margin-top: 120px;
+    font-family: var(--poppins);
+    text-transform: uppercase;
+    color: #7F1D1D;
+    font-size: 35px;
+    font-weight: bold;
+}
+.prodDescript
+{
+    max-width: 30%;
+    max-height: 300px;
+}
+.prodImg
+{
+    max-width: 30%;
+    max-height: 400px;
+    margin: auto 0px;
+}
+.grayTitle
+{
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    color: #818181;
+    font-size: 25px;
+}
+.grayTitle p
+{
+    font-family: 'Verdana';
+    color: #ababab;
+    font-size: 14px;
+    text-transform: none !important;
+}
+.title
+{
+    font-family: var(--poppins);
+    text-transform: uppercase;
+    color: #7F1D1D;
+    font-size: 18px;
+    font-weight: bold;
+}
+.description
+{
+    font-family: var(--poppins);
+    color: #7F1D1D;
+    font-size: 18px;
+}
+.des
+{
+    font-family: var(--montserrat);
+    color: #212121;
+    font-size: 18px;
+}
+.orderBtn {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    font-family: var(--poppins);
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #7F1D1D;
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-box-shadow: 0px 0px 40px #B64248;
+            box-shadow: 0px 0px 40px #B64248;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .orderBtn:active {
+    scale: 0.92;
+  }
+  
+  .orderBtn:hover {
+    background: #B64248;
+    background: -webkit-gradient(linear, right top, left top, from(#7F1D1D), color-stop(60%, #B64248));
+    background: linear-gradient(270deg, #7F1D1D 0%, #B64248 60%);
+    color: #f0f0f0;
+  }
+  .testimonialMargin
+  {    
+    background-color: #818181;
+    margin: 120px 0px 100px 0px;
+  }
+  .testimonial
+  {
+    height: auto;
+    overflow: visible !important;
+    margin: 220px 15%;
+    padding: 0px 5%;
+  }
+  .testimonialChild
+  {
+    position: relative;
+  }
+  /* price page */
+  .orderForm
+  {
+    position: absolute !important;
+    width: 45%;
+    background-color:rgba(255, 255, 255, 0.8) !important;
+    color:white;
+    bottom: 10%;
+    left: 30%;
+    z-index:5;
+  }
+  .orderForm img{
+    position: relative;
+    height: 290px;
+    top: 10px;
+    left: -200px;
+  }
+  .input, .inputMobile {
+    width: 50%;
+    background-color: #fff;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    margin: 10px;
+    float: right;
+  }
+  
+  .input:focus, .inputMobile:focus {
+    border-bottom: 2px solid #A62037;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  .input:hover, .inputMobile:hover {
+    outline: 1px solid lightgrey;
+  }
+/* contact form */
+.place-card
+{
+    display: none !important;
+}
+.contactForm
+{
+    width: 45%;
+    background-color: #A62037;
+}
+.contactForm img{
+    position: relative;
+    height: 290px;
+    top: 10px;
+    left: -200px;
+  }
+.webTesti
+{
+    display: block;
+}
+.mobTesti
+{
+    display: none;
+}
+@media screen and (max-width: 1439px) {
+    .orderForm
+    {
+        zoom: 0.8;
+        left: 25%;
+    }
+    .testimonial
+    {
+      height: 20vh;
+    }
+    .testimonialChild
+    {
+      top: -100px !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .orderForm
+    {
+        zoom: 0.7;
+    }
+    .dividerParent
+    {
+        top: -25px;
+    }
+    .divider
+    {
+        height: 50px;
+    }
+    .testimonial
+    {
+      height: 20vh;
+      margin: 120px 0px;
+    }
+    .testimonialChild
+    {
+      top: -50px !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .orderForm
+    {
+        zoom: 0.5;
+        left: 25%;
+    }
+    .dividerParent
+    {
+        top: -20px;
+    }
+    .divider
+    {
+        height: 40px;
+    }
+    .testimonial
+    {
+      height: 20vh;
+      margin: 50px 0px;
+    }
+    .testimonialChild
+    {
+      top: -10px !important;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .webTesti
+    {
+        display: none;
+    }
+    .mobTesti
+    {
+        display: block;
+        width: 80%;
+    }
+    .testimonialChild
+    {
+        left: 10%;
+    }
+    .testimonial
+    {
+      height: 57vh;
+    }
+    .testimonialChild
+    {
+      top: -30px !important;
+    }
+    .ingrMD
+    {
+        display: none;
+    }
+    .ingrSM
+    {
+        display: block;
+    }
+    .orderForm
+    {
+        zoom: 0.8;
+        height: 200px;
+        width: 300px;
+    }
+    .orderForm img
+    {
+        height: 150px;
+    }
+    .orderForm .input
+    {
+        zoom: 0.6;
+    }
+    .dividerParent
+    {
+        top: -10px;
+    }
+    .divider
+    {
+        height: 20px;
+    }
+    .spacing
+    {
+        text-align: center;
+        max-width: 90%;
+    }
+    .prodDescript
+    {
+        max-width: 40%;
+        max-height: 300px;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .prodImg
+    {
+        max-width: 40%;
+        max-height: 400px;
+        margin: auto 0px;
+    }
+    .description
+    {
+        font-size: 13px;
+    }
+    .mainTitle
+    {
+        font-size: 20px;
+        margin: 20px 0px;
+        font-weight: bold;
+    }
+    .bigTitle
+    {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .testimonialChild{
+        top: -10px !important;
+    }
+    .contactUsBtn
+    {
+        zoom: 0.8;
+    }
+}
+@media screen and (max-width: 320px) {
+    .testimonialChild{
+        top: -15px !important;
+    }
+    .testimonial{
+        height: 45vh;
+    }
+    .contactUsBtn
+    {
+        zoom: 0.7;
+    }
+    .newsLetter
+    {
+        zoom: 0.8;
+    }
+}

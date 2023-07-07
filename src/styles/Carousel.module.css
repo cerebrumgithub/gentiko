@@ -1,0 +1,92 @@
+
+.textOnImg
+{
+    position:absolute !important;
+    width:50%;
+    background-color:rgba(153, 0, 0, 0.3) !important;
+    color:white;
+    bottom: 10%;
+    left:0;
+    padding-left: 150px;
+    z-index:5;
+    padding-right: 100px;
+}
+.textOnImg h1
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+.textOnImg p
+{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+}
+.textOnImg button
+{
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color:rgba(153, 0, 0);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: var(--poppins);
+}
+@media screen and (max-width: 1439px) {
+    .textOnImg
+    {
+        padding-left: 100px;
+        padding-right: 80px;
+        zoom: 0.8;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .textOnImg
+    {
+        padding-left: 70px;
+        padding-right: 50px;
+        zoom: 0.6;
+    }
+}
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .textOnImg
+    {
+        padding-left: 70px;
+        padding-right: 50px;
+        zoom: 0.4;
+    }
+}
+@media screen and (max-width: 424px) {
+    .textOnImg
+    {
+        padding-left: 70px;
+        padding-right: 50px;
+        zoom: 0.3;
+    }
+}
+/* iphones */
+@media only screen 
+    and (min-device-width: 328px) 
+    and (max-device-height: 786px) 
+    and (-webkit-device-pixel-ratio: 3)
+     {
+        .textOnImg
+        {
+            padding-left: 70px;
+            padding-right: 50px;
+            zoom: 0.3;
+        }
+     }
+ @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) 
+ { 
+    .textOnImg
+        {
+            padding-left: 70px;
+            padding-right: 50px;
+            zoom: 0.3;
+        }
+  }
