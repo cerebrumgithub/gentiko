@@ -37,10 +37,10 @@ const Footer = () => {
                         <div className="md:col-span-1 col-start-1 col-end-4">
                             <ul className={`${footer.ul2}`}>
                                 <li>
-                                    <h2 className="text-xl font-bold">Subscribe</h2>
+                                    <h2 className="text-xl font-bold">Email Us!</h2>
                                 </li>
                                 <li>
-                                    Curabitur quis porttitor augue, et posuere ligula. Nunc sagittis vestibulum
+                                    Email us at gentiko.office@gmail.com for more info.
                                 </li>
                                 <li>
                                     <div className={`${footer.inputGroup}`}>

@@ -24,7 +24,7 @@ const Carousel = () => {
                                 alt="Wild Landscape" />
                         <div className={`${carousel.textOnImg}`}>
                             <h1>Because <br/> immunity has an expiration date.</h1><br/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <p>Our innovation dietary supplement, infused with a powerful blend of Cordyceps, Goji berry, Bilberry, Grape skin, Shiitake Mushroom and Pine bark extracts, is here to provide you with the relief you deserve.</p>
                             <button>read more</button>
                         </div>
                     </div>
