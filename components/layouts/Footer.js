@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className="grid grid-cols-3 mid:gap-4">
                         <div className="md:col-span-1 col-start-1 col-end-4">
                             <Image src="/img/smLogo.png" alt="Logo" width={1000} height={1000}/><br/>
-                            <p className={`${footer.des}`}>Nam laoreet est et dui scelerisque, vel rutrum diam fringilla. In nec convallis nisi. Duis vitae ornare massa, vitae iaculis tellus. Sed ultricies tempus metus ut posuere.</p>
+                            <p className={`${footer.des}`}>All in one dietary supplement product.</p>
                         </div>
                         <div className="md:col-span-1 col-start-1 col-end-4 mx-auto md:text-start">
                             <ul className={`${footer.ul}`}>
