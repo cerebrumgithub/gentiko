@@ -25,7 +25,6 @@ const Carousel = () => {
                         <div className={`${carousel.textOnImg}`}>
                             <h1>Because <br/> immunity has an expiration date.</h1><br/>
                             <p>Our innovation dietary supplement, infused with a powerful blend of Cordyceps, Goji berry, Bilberry, Grape skin, Shiitake Mushroom and Pine bark extracts, is here to provide you with the relief you deserve.</p>
-                            <button>read more</button>
                         </div>
                     </div>
                 </SwiperSlide>
