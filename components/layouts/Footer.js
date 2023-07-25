@@ -43,6 +43,7 @@ const Footer = () => {
                                     Email us at gentiko.office@gmail.com for more info.
                                 </li>
                                 <li>
+                                    {/* 
                                     <div className={`${footer.inputGroup}`}>
                                         <input type="email" className={`${footer.input}`} id="Email" name="Email" placeholder="gentiko.office@gmail.com" autoComplete="off"/>
                                         <button className={`${footer.buttonSubmit}`} type="submit">
@@ -51,6 +52,7 @@ const Footer = () => {
                                             </svg>
                                         </button>
                                     </div>
+                                    */}
                                 </li>
                             </ul>
                         </div>
