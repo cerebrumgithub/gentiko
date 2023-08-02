@@ -5,6 +5,7 @@ export default function App({ Component, pageProps }) {
   <>
       <Head>
         <link rel="shortcut icon" href="/img/icon.png"></link>
+        <title>Gentiko Philippines</title>
       </Head>
       <Component {...pageProps} />
   </>
