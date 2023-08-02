@@ -6,6 +6,18 @@ const wait = (ms) => new Promise ((resolve) => setTimeout(resolve,ms));
 export default function Home() {
   return (
     <PublicLayout>
+      <div className="container">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-F13KLVV0CG" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-F13KLVV0CG');
+          `}
+        </Script>
+      </div>
       <Carousel/>    
         <div className={`${home.dividerParent} flex justify-center`}>
             <div className={`${home.divider}`} style={{width: '20%', backgroundColor: '#B64248'}}></div>
@@ -204,5 +216,6 @@ export default function Home() {
           </div><br/><br/>
         </div>
     </PublicLayout>
+
   )
 }
