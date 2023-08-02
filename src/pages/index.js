@@ -2,6 +2,8 @@ import PublicLayout from "components/layouts/PublicLayout";
 import Carousel from "components/carousel/Carousel";
 import Testimonial from "components/testimonial/Testimonial";
 import home from "@/styles/Home.module.css";
+import Script from "next/script";
+
 const wait = (ms) => new Promise ((resolve) => setTimeout(resolve,ms));
 export default function Home() {
   return (
