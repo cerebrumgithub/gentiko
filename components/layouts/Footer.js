@@ -136,7 +136,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={`${footer.info}`}>
-                <div className={`${footer.copyright}`}>GENTIKO © Designed by Cerebrum Design Studio | Copyrights 2023</div>
+                <div className={`${footer.copyright}`}>GENTIKO © Designed by <a target="_blank" href="https://cerebrum.gg">Cerebrum Design Studio</a> | Copyrights 2023</div>
             </div>
         </footer>
     </>
