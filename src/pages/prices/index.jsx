@@ -73,7 +73,7 @@ export default function Prices() {
             <img src="/img/waterMark.png" alt="product"/>
           </div>          
           <div className={`text-center my-12 ${price.prices}`}>
-              <p className={home.des}>1 box price PHP3680.00</p>
+              <p className={home.des}>1 box price: PHP 3680.00</p>
           </div>
           <div className={`flex justify-center`}>
               <img src="/img/product/gentikoProd.png" alt="Gentiko Product" style={{maxWidth: '70%'}}/>
