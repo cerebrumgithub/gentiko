@@ -40,7 +40,7 @@ const Footer = () => {
                                     <h2 className="text-xl font-bold">Email Us!</h2>
                                 </li>
                                 <li>
-                                    Email us at gentiko.office@gmail.com for more info.
+                                    Email us at gentiko.sales@gentiko.ph for more info.
                                 </li>
                                 <li>
                                     {/* 
