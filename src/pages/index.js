@@ -4,6 +4,40 @@ import Testimonial from "components/testimonial/Testimonial";
 import home from "@/styles/Home.module.css";
 import Script from "next/script";
 
+function Facebook() {
+  return (
+    <div>
+      <div id="fb-root"></div>
+
+      <div id="fb-customer-chat" className="fb-customerchat"></div>
+      <Script strategy="lazyOnload">
+        {`
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "YOUR_PAGE_ID");
+            chatbox.setAttribute("attribution", "biz_inbox");
+      
+            window.fbAsyncInit = function() {
+              FB.init({
+                xfbml            : true,
+                version          : 'v17.0'
+              });
+            };
+      
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        `}
+      </Script>
+    </div>
+  );
+}
+
+export function Facebook();
+
 const wait = (ms) => new Promise ((resolve) => setTimeout(resolve,ms));
 export default function Home() {
   return (
@@ -20,36 +54,6 @@ export default function Home() {
           `}
         </Script>
       </div>
-
-    <div id="fb-root"></div>
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <Script>{`
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "118912747813161");
-      chatbox.setAttribute("attribution", "biz_inbox");    
-    `}
-    </Script>
-
-    <Script>{`
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v17.0'
-        });
-      };
-      
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));      
-    `}
-    </Script>
-  
       <Carousel/>    
         <div className={`${home.dividerParent} flex justify-center`}>
             <div className={`${home.divider}`} style={{width: '20%', backgroundColor: '#B64248'}}></div>
