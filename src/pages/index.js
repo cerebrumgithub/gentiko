@@ -4,9 +4,24 @@ import Testimonial from "components/testimonial/Testimonial";
 import home from "@/styles/Home.module.css";
 import Script from "next/script";
 
-export function Facebook() {
+const wait = (ms) => new Promise ((resolve) => setTimeout(resolve,ms));
+export default function Home() {
   return (
-    <div>
+    <PublicLayout>
+      <div className="container">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-F13KLVV0CG" />
+        <Script id="google-analytics">
+          {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F13KLVV0CG');
+          `}
+        </Script>
+      </div>
+
+      <div>
       <div id="fb-root"></div>
 
       <div id="fb-customer-chat" className="fb-customerchat"></div>
@@ -33,25 +48,7 @@ export function Facebook() {
         `}
       </Script>
     </div>
-  );
-}
 
-const wait = (ms) => new Promise ((resolve) => setTimeout(resolve,ms));
-export default function Home() {
-  return (
-    <PublicLayout>
-      <div className="container">
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-F13KLVV0CG" />
-        <Script id="google-analytics">
-          {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F13KLVV0CG');
-          `}
-        </Script>
-      </div>
       <Carousel/>    
         <div className={`${home.dividerParent} flex justify-center`}>
             <div className={`${home.divider}`} style={{width: '20%', backgroundColor: '#B64248'}}></div>
