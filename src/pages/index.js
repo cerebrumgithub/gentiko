@@ -25,7 +25,7 @@ export default function Home() {
       <div id="fb-root"></div>
 
       <div id="fb-customer-chat" className="fb-customerchat"></div>
-      <Script strategy="lazyOnload">
+      <Script id="chat-plugin" strategy="lazyOnload">
         {`
             var chatbox = document.getElementById('fb-customer-chat');
             chatbox.setAttribute("page_id", "YOUR_PAGE_ID");
