@@ -165,7 +165,7 @@ export default function Home() {
             </div>
           </div>
           <div id="prod" className={`flex justify-center my-16`}>
-              <a target="_blank" href="m.me/118912747813161">
+              <a target="_blank" href="https://m.me/118912747813161">
                 <button className={`${home.orderBtn}`}>ORDER NOW</button>
               </a>
           </div>
